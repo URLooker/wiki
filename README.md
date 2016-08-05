@@ -9,21 +9,16 @@
 - agent多机房部署，指定机房访问
 - 检测结果支持向open-falcon推送
 
+## Architecture
+![此处输入图片的描述][2]
+
 ## ScreenShot
 
-![看图][2]
+![看图][3]
 
-![此处输入图片的描述][3]
+![此处输入图片的描述][4]
 
-![添加监控项][4]
-
-## 上报项
-- metric: url_status
-- endpoint: url_id  (id为上图2中的id)
-- tag: creator=creator
-- counterType: GAUGE
-- step: 60（可在配置文件设置）
-- value: 0 (0~4 0表示正常，其他表示异常)
+![添加监控项][5]
 
 ## Install
 
@@ -43,17 +38,22 @@ wget http://x2know.qiniudn.com/schema.sql
 打开浏览器访问 http://127.0.0.1:1984 即可
 
 
-源码安装及详细介绍见：
-[https://github.com/urlooker][5]
+源码安装及介绍见：
+web 组件[安装][6]
+agent 组件[安装][7]
+alarm 组件[安装][8]
 
 ## Thanks
-一些功能参考了open-falcon，感谢 [UlricQin][6] & [laiwei][7]
+一些功能参考了open-falcon，感谢 [UlricQin][9] & [laiwei][10]
 
 
   [1]: https://github.com/urlooker
-  [2]: http://x2know.qiniudn.com/urlooker1.png
-  [3]: http://x2know.qiniudn.com/urlooker3.png
-  [4]: http://x2know.qiniudn.com/urlooker2.png
-  [5]: https://github.com/URLooker/wiki
-  [6]: http://ulricqin.com/
-  [7]: https://github.com/laiwei
+  [2]: https://github.com/urlooker/wiki/raw/master/img/urlooker4.png
+  [3]: https://github.com/urlooker/wiki/raw/master/img/urlooker1.png
+  [4]: https://github.com/urlooker/wiki/raw/master/img/urlooker3.png
+  [5]: https://github.com/urlooker/wiki/raw/master/img/urlooker2.png
+  [6]: https://github.com/URLooker/web
+  [7]: https://github.com/URLooker/agent
+  [8]: https://github.com/URLooker/alarm
+  [9]: http://ulricqin.com/
+  [10]: https://github.com/laiwei
