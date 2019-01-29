@@ -22,26 +22,16 @@
 
 ## Install
 
-导入数据库
-wget http://x2know.qiniudn.com/schema.sql
+#### 导入数据库
+wget https://raw.githubusercontent.com/URLooker/web/master/schema.sql
 将schema.sql 导入数据库
 
-二进制安装(Ubuntu 14.4 Go1.6下编译)：
-
-    wget http://x2know.qiniudn.com/urlooker.tar.gz
-    tar xzvf urlooker.tar.gz
-    cd urlooker
-    web/control start
-    alarm/control start
-    agent/control start
-
-打开浏览器访问 http://127.0.0.1:1984 即可
-
-
-源码安装及介绍见：
+#### 源码安装：
 web 组件[安装][6]
 agent 组件[安装][7]
 alarm 组件[安装][8]
+
+打开浏览器访问 http://127.0.0.1:1984 即可
 
 ## Thanks
 一些功能参考了open-falcon，感谢 [UlricQin][9] & [laiwei][10]
