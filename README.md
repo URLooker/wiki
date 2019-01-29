@@ -23,20 +23,21 @@
 ## Install
 
 #### 源码安装
-**安装依赖**
+###### 安装依赖
 ```
 yum install -y redis
 yum install -y mysql-server
 ```
-**导入数据库**
+###### 导入数据库
 ```
 wget https://raw.githubusercontent.com/URLooker/web/master/schema.sql
 mysql -h 127.0.0.1 -u root -p < schema.sql
 ```
 
-web 组件[安装][6]
-agent 组件[安装][7]
-alarm 组件[安装][8]
+###### 安装组件
+- web 组件[安装][6]
+- agent 组件[安装][7]
+- alarm 组件[安装][8]
 
 打开浏览器访问 http://127.0.0.1:1984 即可
 
