@@ -22,11 +22,18 @@
 
 ## Install
 
-#### 导入数据库
+#### 源码安装
+**安装依赖**
+```
+yum install -y redis
+yum install -y mysql-server
+```
+**导入数据库**
+```
 wget https://raw.githubusercontent.com/URLooker/web/master/schema.sql
-将schema.sql 导入数据库
+mysql -h 127.0.0.1 -u root -p < schema.sql
+```
 
-#### 源码安装：
 web 组件[安装][6]
 agent 组件[安装][7]
 alarm 组件[安装][8]
